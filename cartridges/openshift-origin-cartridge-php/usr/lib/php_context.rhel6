@@ -11,6 +11,8 @@ function update_configuration {
   # PEAR bin_dir
   local path=$(php_context "pear -c ${OPENSHIFT_HOMEDIR}.pearrc config-get bin_dir" | tr -d '\n')
 
+  path=$(path_append $path $(dirname $(scl enable php54 "which php") | tr -d '\n'))
+
   case $OPENSHIFT_PHP_VERSION in
     5.4)
       # SCL bin_dir
