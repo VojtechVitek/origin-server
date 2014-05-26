@@ -9,18 +9,35 @@ https://openshift.redhat.com/community/open-source[OpenShift Origin] is Red Hat'
 
 == General Overview
 
-* https://openshift.redhat.com/community/wiki/learning-openshift-origin[Learning OpenShift Origin]
-* link:origin_hangouts.html[Origin On-Air Hangouts]
 * link:oo_system_architecture_guide.html[Architecture Overview]
-* link:changelog.html[OpenShift Origin Change Log]
+* link:https://www.openshift.com/walkthrough/how-it-works[How It Works]
+* link:https://www.openshift.com/walkthrough/developer-workflow[Developer Workflow]
+* link:origin_hangouts.html[Origin On-Air Hangouts]
 
-== Documentation
+== Development
 
-[cols="3*<.<1d",options="header"]
+[cols="2*<.<1d",options="header"]
+|===
+|Application Developer Guides
+|Cartridge Developer Guides
+
+a|link:oo_user_guide.html[User Guide] +
+link:oo_client_tools_installation_guide.html[Client Tools Installation Guide] +
+link:oo_cartridge_guide.html[Cartridge Guide]
+
+a|link:oo_contributors_guide.html[OpenShift Contributors Guide] +
+link:oo_cartridge_developers_guide.html[Cartridge Developers Guide] +
+link:rest_api/rest-api-1-6.html[Broker REST API] +
+link:oo_notes_building_rpms_from_source.html[Notes on Building from Source]
+
+|===
+
+== Installation & Administration
+
+[cols="2*<.<1d",options="header"]
 |===
 |Installation Guides
 |Admin Guides
-|Developer Guides
 
 a|link:oo_install_users_guide.html[*oo-install* User's Guide] +
 link:oo_deployment_guide_comprehensive.html[Comprehensive Deployment Guide] +
@@ -30,15 +47,8 @@ link:oo_deployment_guide_vm.html[Virtual Machine Deployment Guide] +
 link:oo_client_tools_installation_guide.html[Client Tools Installation Guide]
 
 a|link:oo_administration_guide.html[Administration Guide] +
-link:oo_cartridge_guide.html[Cartridge Guide] +
 link:oo_troubleshooting_guide.html[Troubleshooting Guide] +
 link:oo_notes_running_a_local_ddns.html[Notes on Running a Local DNS]
-
-a|link:oo_contributors_guide.html[OpenShift Contributors Guide] +
-link:oo_cartridge_developers_guide.html[Cartridge Developers Guide] +
-link:oo_user_guide.html[User Guide] +
-link:rest_api/rest-api-1-6.html[Broker REST API] +
-link:oo_notes_building_rpms_from_source.html[Notes on Building from Source]
 
 |===
 
@@ -57,7 +67,7 @@ OpenShift Origin sources are arranged into 5 repositories:
 |Contains all the build tools necessary for building and testing a local or EC2 OpenShift Origin installation.
 
 |http://github.com/openshift/origin-server[origin-server]
-|The main repository that contains the source code for the Broker, Node and various plugins for DNS, Communication and Authentication. It also contains some of the core cartridges used by OpenShift installations.
+|The main repository that contains the source code for the Broker, Node and various plugins for DNS, Communication and Authentication. It also contains some of the core Cartridges used by OpenShift installations.
 
 |http://github.com/openshift/origin-community-cartridges[origin-community-cartridges]
 |Contains additional cartridges used during the Fedora 19 installation.
