@@ -346,6 +346,7 @@ Requires:  symlinks
 Requires:  python27-MySQL-python
 Requires:  python27-python-psycopg2
 Requires:  python33-python-psycopg2
+Requires:  python33-python-pip
 %endif
 
 %description recommended-python
